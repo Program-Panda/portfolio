@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sango-Wordpress</title>
+  <meta name="description" content="猫の好きなもの">
+<link href="style.css" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+
+<!-- 記法はBEMをカスタマイズしたもの -->
+<!-- BlockとElementは__で区切る。また、Elementの頭文字は小文字で表記 -->
+<!-- ElementとModifierは-で区切る。また、Modifierの頭文字は大文字で表記 -->
+<!-- Blockの子としてBlockが登場しても良い -->
+<!-- Elementの入れ子は避ける。HTML上の入れ子関係があっても常にBlock直下のElementであるように書く -->
+<!-- Block、Element及びModifierを2つ以上の単語で表す時は、複合語の頭文字を大文字で表記 -->
+
+<body>
+
+  <!-- Header start -->
+  <header class="Header">
+    <!-- inner -->
+    <div class="Header__inner">                 
+      <!-- logo -->
+      <div class="Header__logo">
+        <img src="images/sango-1.svg" alt="sangoのロゴ">
+      </div>
+      <!-- nav -->
+      <nav class="Header__nav">
+        <ul class="Header__nav-List">
+          <li>
+        <i class="fas fa-flag Header__nav-Frag"></i><a href="#" class="Header__nav-Item-Feature ">特徴</a>
+          </li>
+          <li>
+            <i class="fas fa-book Header__nav-Book"></i> <a href="#" class="Header__nav-Item-Guide">使い方ガイド</a>
+          </li>
+          <li>
+        <i class="fas fa-cloud-download-alt Header__nav-Cloud"></i><a href="#" class="Header__nav-Item-Download">ダウンロード</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="Modal">
+  </div>
+  <!-- Header end -->
+
+  <!-- Container start -->
+  <div class="Container">
+
+      <!-- BigImage start -->
+      <div class="BigImage">
+          <!-- image -->
+          <div class="BigImage__img">
+            <img src="images/sangoheader-min.png" alt="bigimage" class="BigImage__img-Img">
+          </div>
+          <!-- text -->
+          <section class="BigImage__text">
+            <h1 class="BigImage__text-MainCatch">心地よいWordPressテーマ</h1>
+            <p class="BigImage__text-SubCatch">
+              SANGOはユーザーフレンドリーを追求したWordPressテーマです。
+              Googleのマテリアルデザインを大部分で採用。内部SEOも最適化されています。
+            </p>
+            <a href="#" class="BigImage__text-Btn">特徴を見る</a>
+          </section>
+      </div>
+      <!-- BigImage end -->
+
+      <!-- Content start -->
+      <div class="Content">
+        <div class="Content__inner">
+
+          <!-- Main start -->
+          <main class="Main">
+            <!-- tab -->
+            <div class="Main__tabBar">
+              <div class="Main__tabBar-NewArticle"><i class="fas fa-rocket Main__tabBar-NewArticle-Rocket"></i><span>新着記事</span></div>
+              <div class="Main__tabBar-RecommendArticle"><i class="fas fa-bookmark Main__tabBar-RecommendArticle-BookMark"></i><span>おすすめ記事</span></div>
+            </div>
+            <!-- blogCard -->
+            <div class="Main__blogCard">
+              <!-- Main > MainArticle start -->
+              <!-- MainArticle1 -->
+              <article class="MainArticle">
+                <div class="MainArticle__img" style="width: 100%; height: 20.3rem; background-image: url(images/light-mockup-min-520x300.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
+                <section class="MainArticle__text">
+                  <time class="MainArticle__text-Date"><i class="fas fa-sync-alt MainArticle__text-Sync"></i>2019/07/09</time>
+                  <h2 class="MainArticle__text-Title">WordPressテーマ「SANGO」29の魅力</h2>
+                </section>
+              </article>
+              <!-- MainArticle2 -->
+              <article class="MainArticle">
+                <div class="MainArticle__img" style="width: 100%; height: 20.3rem; background-image: url(images/fafa-2-520x300.jpg); background-repeat: no-repeat; background-size: cover; background-position: center"></div>
+                <section class="MainArticle__text">
+                  <time class="MainArticle__text-Date"><i class="fas fa-sync-alt MainArticle__text-Sync"></i>2019/07/09</time>
+                  <h2 class="MainArticle__text-Title">WordPressテーマ「SANGO」の魅力</h2>
+                </section>
+              </article>
+              <!-- MainArticle3 -->
+              <article class="MainArticle">
+                <div class="MainArticle__img" style="width: 100%; height: 20.3rem; background-image: url(images/fafd-1-520x300.jpg); background-repeat: no-repeat; background-size: cover;background-position: center"></div>
+                <section class="MainArticle__text">
+                  <time class="MainArticle__text-Date"><i class="fas fa-sync-alt MainArticle__text-Sync"></i>2019/07/09</time>
+                  <h2 class="MainArticle__text-Title">WordPressテーマ「SANGO」の魅力</h2>
+                </section>
+              </article>
+              <!-- MainArticle4 -->
+              <article class="MainArticle">
+                <div class="MainArticle__img" style="width: 100%; height: 20.3rem; background-image: url(images/faf-2-520x300.jpg); background-repeat: no-repeat; background-size: cover;background-position: center"></div>
+                <section class="MainArticle__text">
+                  <time class="MainArticle__text-Date"><i class="fas fa-sync-alt MainArticle__text-Sync"></i>2019/07/09</time>
+                  <h2 class="MainArticle__text-Title">WordPressテーマ「SANGO」の魅力</h2>
+                </section>
+              </article>
+              <!-- MainArticle5 -->
+              <article class="MainArticle">
+                <div class="MainArticle__img" style="width: 100%; height: 20.3rem; background-image: url(images/OVFPXK1-520x300.jpg); background-repeat: no-repeat; background-size: cover;background-position: center"></div>
+                <section class="MainArticle__text">
+                  <time class="MainArticle__text-Date"><i class="fas fa-sync-alt MainArticle__text-Sync"></i>2019/07/09</time>
+                  <h2 class="MainArticle__text-Title">WordPressテーマ「SANGO」の魅力</h2>
+                </section>
+              </article>
+              <!-- MainArticle6 -->
+              <article class="MainArticle">
+                <div class="MainArticle__img" style="width: 100%; height: 20.3rem; background-image: url(images/fa-1-520x300.jpg); background-repeat: no-repeat; background-size: cover;background-position: center"></div>
+                <section class="MainArticle__text">
+                  <time class="MainArticle__text-Date"><i class="fas fa-sync-alt MainArticle__text-Sync"></i>2019/07/09</time>
+                  <h2 class="MainArticle__text-Title">WordPressテーマ「SANGO」の魅力</h2>
+                </section>
+              </article>
+              <!-- MainArticle7 -->
+              <article class="MainArticle">
+                <div class="MainArticle__img" style="width: 100%; height: 20.3rem; background-image: url(images/faf-1-520x300.jpg); background-repeat: no-repeat; background-size: cover;background-position: center"></div>
+                <section class="MainArticle__text">
+                  <time class="MainArticle__text-Date"><i class="fas fa-sync-alt MainArticle__text-Sync"></i>2019/07/09</time>
+                  <h2 class="MainArticle__text-Title">WordPressテーマ「SANGO」の魅力</h2>
+                </section>
+              </article>
+              <!-- MainArticle8 -->
+              <article class="MainArticle">
+                <div class="MainArticle__img" style="width: 100%; height: 20.3rem; background-image: url(images/f-520x300.jpg); background-repeat: no-repeat; background-size: cover;background-position: center"></div>
+                <section class="MainArticle__text">
+                  <time class="MainArticle__text-Date"><i class="fas fa-sync-alt MainArticle__text-Sync"></i>2019/07/09</time>
+                  <h2 class="MainArticle__text-Title">WordPressテーマ「SANGO」の魅力</h2>
+                </section>
+              </article>
+            </div>
+              <!-- Main > MainArticle end -->
+            <!-- Pagination -->
+            <div class="Main__pagination">
+              <a href="#" class="Main__pagination-Number Main__pagination-Number1">1</a>
+              <a href="#" class="Main__pagination-Number">2</a>
+              <a href="#" class="Main__pagination-Number">3</a>
+            </div>
+          </main>
+          <!-- Main end -->
+
+          <!-- Aside start -->
+          <aside class="Aside">
+
+            <!-- searchBar -->
+            <div class="Aside__searchBar">
+              <form action="#" id="form1" class="Aside__searchBar-Form">
+                <input type="text" id="search1" placeholder="検索" class="Aside__searchBar-InputText">
+                <input type="btn" type="submit" id="btn1" class="Aside__searchBar-InputBtn"><i class="fas fa-search fa-search1 Aside__searchBar-Fa-Search"></i>
+              </form>
+            </div>
+
+            <!-- Intro CatNoseの自己紹介 -->
+            <div class="Aside__intro">
+              <!-- introImg -->
+              <div class="Aside__introImg" style="background-image: url(images/profile-01-min.png);background-size: cover; background-position: center;"></div>
+              <!-- introContainer -->
+              <div class="Aside__introContainer">
+                <!-- introIcon -->
+                <div class="Aside__introIcon"><img src="images/catnose.png" alt="猫の画像"></div>
+                <!-- introDesc -->
+                <div class="Aside__introDesc">
+                  <p class="Aside__introDesc-Name">CatNose</p>
+                  <p class="Aside__introDesc-Text">WordPressテーマ「SANGO」は<span class="Aside__introDesc-Text-Blue">サルワカ</span>の中の人が制作しました。なお、本デモサイトに含まれるアイキャッチ画像や記事内の画像はテーマに含まれないのでご注意ください。</p>
+                </div>
+                <!-- introSns -->
+                <div class="Aside__introSns">
+                  <div class="Aside__introSns-Twitter"><i class="fab fa-twitter Aside__introSns-Fa-Twitter"></i></div>
+                  <div class="Aside__introSns-Facebook"><i class="fab fa-facebook Aside__introSns-Fa-Facebook"></i></div>
+                  <div class="Aside__introSns-Instagram"><i class="fab fa-instagram Aside__introSns-Fa-Instagram"></i></div>
+                  <div class="Aside__introSns-Feedly"><i class="fas fa-rss Aside__introSns-Fa-Feedly"></i></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- InfoBox タイトル=>メニュー -->
+            <div class="Aside__infoBox">
+              <!-- infoHeaderTitle -->
+              <p class="Aside__infoHeaderTitle"><i class="fas fa-map-marker-alt Aside__infoHeaderTitle-Fa-Map-Alt"></i>メニュー</p>
+              <!-- infoContainer -->
+              <div class="Aside__infoContainer">
+                <!-- infoAboutSango -->
+                <div class="Aside__infoAboutSango">
+                  <i class="fas fa-info-circle Aside__infoAboutSango-Icon-Fa-Info-Circle"></i>
+                  <p class="Aside__infoAboutSango-Catch">SANGOについて</p>
+                </div>
+                <!-- infoAboutTopPage -->
+                <div class="Aside__infoAboutTopPage">
+                  <i class="fas fa-laptop Aside__infoAboutTopPage-Icon-Fa-Laptop"></i>
+                  <p class="Aside__infoAboutTopPage-Catch">TOP用固定ページ</p>
+                </div>
+                <!-- infoAboutTermsOfUse -->
+                <div class="Aside__infoAboutTermsOfUse">
+                  <i class="fas fa-file-alt Aside__infoAboutTermsOfUse-Icon-Fa-File-Alt"></i>
+                  <p class="Aside__infoAboutTermsOfUse-Catch">利用規約</p>
+                </div> 
+                <!-- infoAboutContact -->
+                <div class="Aside__infoAboutContact">
+                  <i class="fas fa-envelope Aside__infoAboutContact-Icon-Fa-Envelope"></i>
+                  <p class="Aside__infoAboutContact-Catch">お問い合わせ</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- PopularBlogBox タイトル=>Popular -->
+            <div class="Aside__popularBlogBox">
+              <p class="Aside__popularHeaderTitle"><i class="fas fa-chart-line Aside__popularHeaderTitle-Fa-Chart-Line"></i>POPULAR</p>
+              <!-- popularContainer -->
+              <div class="Aside__popularContainer">
+                <!-- popularArticle1 -->
+                <article class="Aside__popularArticle">
+                  <div class="Aside__popularImg"  style="height: 8rem; background-image: url(images/light-mockup-min-160x160.jpg); background-repeat: no-repeat; background-size: cover;"><div class="Aside__popularImg-Number">1</div></div>
+                  <div class="Aside__popularText">
+                    <h2 class="Aside__popularText-Title">WordPress「SANGO」29の魅力</h2>
+                    <time class="Aside__popularText-Date">88733 views</time>
+                  </div>
+                </article>
+                <!-- popularArticle2 -->
+                <article class="Aside__popularArticle">
+                  <div class="Aside__popularImg" style="height: 8rem; background-image: url(images/fafd-1-160x160.jpg); background-repeat: no-repeat; background-size: cover;"><div class="Aside__popularImg-Number">2</div></div>
+                  <div class="Aside__popularText">
+                    <h2 class="Aside__popularText-Title">記事を華やかに！約40種類の見出しデザイン</h2>
+                    <time class="Aside__popularText-Date">31185 views</time>
+                  </div>
+                </article>
+                <!-- popularArticle3 -->
+                <article class="Aside__popularArticle">
+                  <div class="Aside__popularImg"  style="height: 8rem; background-image: url(images/fafa-2-160x160.jpg); background-repeat: no-repeat; background-size: cover;" ><div class="Aside__popularImg-Number">3</div></div>
+                  <div class="Aside__popularText">
+                    <h2 class="Aside__popularText-Title">SANGOのショートコードでできること</h2>
+                    <time class="Aside__popularText-Date">28905 views</time>
+                  </div>
+                </article>
+                <!-- popularArticle4 -->
+                <article class="Aside__popularArticle">
+                  <div class="Aside__popularImg"  style="height: 8rem;background-image: url(images/fafd-1-160x160.jpg); background-repeat: no-repeat; background-size: cover;"><div class="Aside__popularImg-Number">4</div></div>
+                  <div class="Aside__popularText">
+                    <h2 class="Aside__popularText-Title">関連記事のデザインを3パターン+から選べるように</h2>
+                    <time class="Aside__popularText-Date">17352 views</time>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <!-- snsBox タイトル=>Follow Me -->
+            <div class="Aside__snsBox">
+              <!-- snsHeaderTitle -->
+              <p class="Aside__snsHeaderTitle">Follow Me</p>
+              <!-- snsContainer -->
+              <div class="Aside__snsContainer">
+                <!-- snsTwitter -->
+                <div class="Aside__snsTwitter">
+                  <div class="Aside__snsTwitter-Icon">
+                    <i class="fab fa-twitter-square fa-sns-twitter Aside__snsTwitter-Fa-Sns-Twitter"></i>
+                  </div>
+                  <p class="Aside__snsTwitter-IconName">Twitter</p>
+                </div>
+                <!-- snsFacebook -->
+                  <div class="Aside__snsFacebook">
+                    <div class="Aside__snsFacebook-Icon">
+                      <i class="fab fa-facebook-square fa-sns-facebook Aside__snsFacebook-Fa-Sns-Facebook"></i>
+                    </div>
+                    <p class="Aside__snsFacebook-IconName">Facebook</p>
+                  </div>
+                    <!-- snsInstagram -->
+                  <div class="Aside__snsInstagram">
+                    <div class="Aside__snsInstagram-Icon">
+                      <i class="fab fa-instagram fa-sns-instagram Aside__snsInstagram-Fa-Sns-Instagram"></i>
+                    </div>
+                    <p class="Aside__snsInstagram-IconName">Instagram</p>
+                  </div>
+                  <!-- snsFeedly -->
+                  <div class="Aside__snsFeedly">
+                    <div class="Aside__snsFeedly-Icon">
+                      <i class="fas fa-rss-square fa-sns-rss Aside__snsFeedly-Fa-Sns-Feedly"></i>
+                    </div>
+                    <p class="Aside__snsFeedly-IconName">Feedly</p>
+                  </div>
+              </div>
+
+            </div>
+
+            <!-- ArchiveBox タイトル=>Archive -->
+            <div class="Aside__archiveBox">
+              <!-- archiveHeaderTitle -->
+              <p class="Aside__archiveHeaderTitle"><i class="fas fa-clock Aside__archiveHeaderTitle-Fa-Clock"></i>ARCHIVE</p>
+              <!-- archiveContainer -->
+              <div class="Aside__archiveContainer">
+                <select name="archive-dropdown" id="archive-dropdown-5" class="Aside__archiveContainer-Dropdown">
+                  <option value>月を選択</option>
+                  <option value="">2019年3月</option>
+                  <option value="">2019年3月</option>
+                  <option value="">2019年3月</option>
+                  <option value="">2019年3月</option>
+                  <option value="">2019年3月</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- CategoryBox タイトル=>Category -->
+            <div class="Aside__categoryBox">
+              <p class="Aside__categoryHeaderTitle"><i class="fas fa-list-ul Aside__categoryHeaderTitle-Fa-List-Ul"></i>CATEGORY</p>
+              <div class="Aside__categoryContainer">
+                <div class="Aside__categoryIndex"><a href="#" class="Aside__categoryIndex-Title">カスタマイズカテゴリー</a><div class="Aside__categoryIndex-Number">3</div></div>
+                <div class="Aside__categoryIndex"><a href="#" class="Aside__categoryIndex-Title">カテゴリー名</a><div class="Aside__categoryIndex-Number">10</div></div>
+                <div class="Aside__categoryIndex"><a href="#" class="Aside__categoryIndex-Title">デザイン</a><div class="Aside__categoryIndex-Number">7</div></div>
+                <ul class="Aside__categoryIndexList">
+                  <li class="Aside__categoryIndexList-Item"><i class="fas fa-angle-right Aside__categoryIndexList-Fa-Angle-Right"></i><a href="#" class="Aside__categoryIndexList-Item-Title">ボックス</a><div class="Aside__categoryIndex-Number">1</div></li>
+                  <li class="Aside__categoryIndexList-Item"><i class="fas fa-angle-right Aside__categoryIndexList-Fa-Angle-Right"></i><a href="#" class="Aside__categoryIndexList-Item-Title">リスト</a><div class="Aside__categoryIndex-Number">1</div></li>
+                  <li class="Aside__categoryIndexList-Item"><i class="fas fa-angle-right Aside__categoryIndexList-Fa-Angle-Right"></i><a href="#" class="Aside__categoryIndexList-Item-Title">見出し</a><div class="Aside__categoryIndex-Number">1</div></li>
+                </ul>
+                <div class="Aside__categoryIndex"><a href="#" class="Aside__categoryIndex-Title">ニュース</a>
+                  <div class="Aside__categoryIndex-Number">7</div>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <!-- Aside end -->
+
+        </div>
+      </div>
+      <!-- Content end -->
+      
+  </div>
+  <!-- Container end -->
+
+  <footer class="Footer">
+    <!-- top -->
+    <div class="Footer__top">
+      <!-- topInner -->
+      <div class="Footer__topInner">
+        <!-- topMenu1 -->
+          <div class="Footer__topMenu1">
+            <!-- topSearchBar -->
+            <div class="Footer__searchBar">
+              <form action="#" id="form2" class="Footer__searchBar-Form">
+                <input type="text" id="search2" class="Footer__searchBar-Text">
+                <input type="btn" id="btn2" type="submit" class="Footer__searchBar-Btn"><i class="fas fa-search Footer__searchBar-Fa-Search"></i>
+              </form>
+            </div>
+            <!-- headerTitle -->
+            <h3 class="Footer__headerTitle-Pages">PAGES</h3>
+            <!-- list -->
+            <ul class="Footer__list">
+              <li class="Footer__list-Item-First"><i class="fas fa-angle-right Footer__list-Item-Fa-Angle-Right"></i>1カラム固定ページ</li>
+              <li class="Footer__list-Item"><i class="fas fa-angle-right Footer__list-Item-Fa-Angle-Right"></i>SANGOについて</li>
+              <li class="Footer__list-Item"><i class="fas fa-angle-right Footer__list-Item-Fa-Angle-Right"></i>トップページ用固定ページ</li>
+            </ul>
+          </div>
+          <!-- topMenu2 -->
+          <div class="Footer__topMenu2">
+            <!-- headserTitle -->
+            <h3 class="Footer__headerTitle-RecentPosts">RECENT POSTS</h3>
+            <!-- article1 -->
+            <article class="Footer__article">
+                <img class="Footer__article-Img" src="images/light-mockup-min-160x160.jpg" alt="sp写真" style="width: 8rem;height: 8rem;">
+              <div class="Footer__article-Text">
+                <h2 class="Footer__article-Text-Title">WordPress「SANGO」29の魅力</h2>
+                <time class="Footer__article-Text-Date">88733 views</time>
+              </div>
+            </article>
+            <!-- article2 -->
+            <article class="Footer__article">
+                <img class="Footer__article-Img" src="images/fafa-2-160x160.jpg" alt="pc写真" style="width: 8rem;height: 8rem;">
+              <div class="Footer__article-Text">
+                <h2 class="Footer__article-Text-Title">WordPress「SANGO」29の魅力</h2>
+                <time class="Footer__article-Text-Date">88733 views</time>
+              </div>
+            </article>
+            <!-- article3 -->
+            <article class="Footer__article">
+                <img class="Footer__article-Img" src="images/fafd-1-160x160.jpg" alt="pillow写真" style="width: 8rem;height: 8rem;">
+              <div class="Footer__article-Text">
+                <h2 class="Footer__article-Text-Title">WordPress「SANGO」29の魅力</h2>
+                <time class="Footer__article-Text-Date">88733 views</time>
+              </div>
+            </article>
+          </div>
+          <!-- topMenu3 -->
+          <div class="Footer__topMenu3">
+            <h3 class="Footer__headerTitle-Category">CATEGORY</h3>
+            <ul class="Fotter__list">
+              <li class="Footer__list-Item-First"><i class="fas fa-angle-right Footer__list-Item-Fa-Angle-Right"></i>カスタマイズカテゴリー</li>
+              <li class="Footer__list-Item"><i class="fas fa-angle-right Footer__list-Item-Fa-Angle-Right"></i>カテゴリー名</li>
+              <li class="Footer__list-Item"><i class="fas fa-angle-right Footer__list-Item-Fa-Angle-Right"></i>デザイン</li>
+              <li class="Footer__list-Item"><i class="fas fa-angle-right Footer__list-Item-Fa-Angle-Right"></i>ニュース</li>
+              <li class="Footer__list-Item"><i class="fas fa-angle-right Footer__list-Item-Fa-Angle-Right"></i>ボックス</li>
+              <li class="Footer__list-Item"><i class="fas fa-angle-right Footer__list-Item-Fa-Angle-Right"></i>リスト</li>
+              <li class="Footer__list-Item"><i class="fas fa-angle-right Footer__list-Item-Fa-Angle-Right"></i>見出し</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+
+    <!-- bottom -->
+    <div class="Footer__bottom">
+      <!-- bottomFirst -->
+      <div class="Footer__bottomFirst">
+        <i class="fas fa-home Footer__bottomFirst-Fa-Home"></i><a class="Footer__bottomFirst-HeaderTitle">HOME</a>
+      </div>
+      <!-- bottomSecond -->
+      <div class="Footer__bottomSecond">
+        <a class="Footer__bottomSecond-TermsOfUse">利用規約</a>
+        <a class="Footer__bottomSecond-Contact">お問い合わせ</a>
+      </div>
+      <!-- bottomLast -->
+      <div class="Footer__bottomLast">&copy; 2019 saruwakakun.com All rights reserved</div>
+    </div>
+  </footer>
+
+
+
+
+<script src="main.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
